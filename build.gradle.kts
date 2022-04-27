@@ -18,5 +18,17 @@ javafx {
 }
 
 application {
-    mainClassName = "xyz.lcdev.aidev.chess.ui.MainKt"
+    mainClassName = "xyz.lcdev.aidev.chess.ui.Main"
+}
+
+kotlin {
+    jvmToolchain {
+        (this as JavaToolchainSpec).languageVersion.set(JavaLanguageVersion.of(18))
+    }
+}
+
+java {
+    toolchain {
+        this.languageVersion.set(JavaLanguageVersion.of(18))
+    }
 }
