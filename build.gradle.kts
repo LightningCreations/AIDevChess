@@ -6,6 +6,7 @@ plugins {
     application
     kotlin("jvm") version "1.6.21"
     id("org.openjfx.javafxplugin") version "0.0.12"
+    id("org.javamodularity.moduleplugin") version "1.8.10"
 }
 
 dependencies {
