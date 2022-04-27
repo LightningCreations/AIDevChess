@@ -1,9 +1,7 @@
-module xyz.lcdev.aidev.chess {
+module xyz.lcdev.aidev.chess.ui {
     requires kotlin.stdlib;
-    requires org.reflections;
     requires javafx.controls;
     requires javafx.graphics;
 
-    exports xyz.lcdev.aidev.chess.core;
     exports xyz.lcdev.aidev.chess.ui;
 }
