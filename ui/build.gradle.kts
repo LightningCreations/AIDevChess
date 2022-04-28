@@ -14,7 +14,7 @@ plugins {
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(18))
+        languageVersion.set(JavaLanguageVersion.of(17))
     }
 }
 
@@ -28,6 +28,10 @@ val compileJava: JavaCompile by tasks
 compileKotlin.destinationDirectory.set(compileJava.destinationDirectory)
 
 application {
-    mainClassName = "xyz.lcdev.aidev.chess.ui.Main"
+    mainClass.set("xyz.lcdev.aidev.chess.ui.Main")
     mainModule.set("xyz.lcdev.aidev.chess.ui")
+}
+
+dependencies {
+    implementation("com.github.mouse0w0:darculafx:1.0.0")
 }
