@@ -34,4 +34,5 @@ application {
 
 dependencies {
     implementation("com.github.mouse0w0:darculafx:1.0.0")
+    implementation(project(":core"))
 }
